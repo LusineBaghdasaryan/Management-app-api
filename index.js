@@ -29,7 +29,5 @@ require('./routes/swagger.route')(app);
 require('./routes/client.route')(app, models, configs);
 require('./routes/provider.route')(app, models, configs);
 
-server.listen(
-        configs.port,
-        () => console.log(`NodeJS server listen on port ${configs.port}`)
+server.listen(process.env.PORT || configs.port, () => console.log(`NodeJS server listen on port ${configs.port}`)
 );
