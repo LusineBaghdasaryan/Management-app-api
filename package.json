@@ -4,9 +4,7 @@
   "description": "Client management app",
   "main": "index.js",
   "scripts": {
-    "dev-server": "node-dev index.js",
-    "dev-client": "npm run start --prefix client",
-    "build-client": "npm run build --prefix client"
+    "start": "node-dev index.js"
   },
   "author": "Lusine Baghdasaryan",
   "license": "ISC",
