@@ -16,10 +16,11 @@ app.use(cors());
 
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://60a264376bb92f192e26c4af--jolly-golick-b3f478.netlify.app' || '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-   
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header(
+            'Access-Control-Allow-Headers',
+            'Origin, X-Requested-With,Content-Type,Accept'
+    );
     next();
 });
 
