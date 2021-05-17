@@ -4,7 +4,8 @@
   "description": "Client management app",
   "main": "index.js",
   "scripts": {
-    "start": "node-dev index.js"
+    "dev-server": "node-dev index.js",
+    "start": "node index.js"
   },
   "author": "Lusine Baghdasaryan",
   "license": "ISC",
